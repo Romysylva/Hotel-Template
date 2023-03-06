@@ -1,0 +1,18 @@
+#Rooms_form {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#Rooms_form .Rooms-container {
+  max-width: 100%;
+  gap: 1rem;
+  justify-content: stretch;
+}
+
+#Rooms_form .Rooms-container .form-group {
+  padding-left: 1rem;
+}
+
+#Rooms_form .Rooms-container label i {
+  padding-right: 1rem;
+}

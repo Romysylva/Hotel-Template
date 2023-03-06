@@ -1,0 +1,20 @@
+$nav_bg-c: #003580;
+$body_txt-c: #02314b;
+
+.card {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+
+}
+@mixin opac-0($intensity: 0.6) {
+    opacity: $intensity;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.opac {
+    @include opac-0();
+}
+@mixin opac-1 {
+    @extend .opac;
+    opacity: 1;
+}

@@ -1,0 +1,24 @@
+#Nav-with-Logo-Button {
+    background-color: $nav_bg-c;
+    height: 60px;
+
+    .nav_logo {
+        background-color: $danger-c;
+        height: 10%;
+        padding: 0.5rem 1rem;
+        color: $light-c;
+    }
+    ul {
+        height: 100%;
+    }.nav_link {
+        a {
+            padding: 1rem;
+            color: $light-c;
+            height: 100%;
+            &:hover {
+                @include nav_item-Hover;
+            }
+        }
+    }
+    
+}

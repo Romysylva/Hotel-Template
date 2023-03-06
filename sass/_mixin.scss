@@ -1,0 +1,25 @@
+// Navigation mixin 
+
+@mixin nav_item-Hover {
+    color: $light-c;
+    background-color: $prim-c;
+}
+
+// bg-img mixin 
+@mixin bg_img($img-h: 600px, $img-w: 100%) {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: $img-h;
+    width: $img-w;
+}
+
+// text color function 
+
+@function set_text-c($value) {
+    @if(lightness($value) > 55) {
+        @return $dark-c;
+    } @else {
+        @return $light-c;
+    }
+}

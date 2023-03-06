@@ -1,0 +1,61 @@
+@import url("https://fonts.goggleapis.com/css?family=Lato&display=swap");
+.card {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.opac {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  max-width: 1450px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  background-color: #769cd3;
+  background-color: #faf9f7;
+  color: #02314b;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+p {
+  word-break: break-all;
+}
+
+#Nav-with-Logo-Button {
+  background-color: #003580;
+  height: 60px;
+}
+#Nav-with-Logo-Button .nav_logo {
+  background-color: #cc3b3b;
+  height: 10%;
+  padding: 0.5rem 1rem;
+  color: #faf9f7;
+}
+#Nav-with-Logo-Button ul {
+  height: 100%;
+}
+#Nav-with-Logo-Button .nav_link a {
+  padding: 1rem;
+  color: #faf9f7;
+  height: 100%;
+}
+#Nav-with-Logo-Button .nav_link a:hover {
+  color: #faf9f7;
+  background-color: #1177ff;
+}
+/*# sourceMappingURL=style.css.map */

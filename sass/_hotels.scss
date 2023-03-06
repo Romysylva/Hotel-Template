@@ -1,0 +1,54 @@
+#Hotels {
+    .Hotels-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+        .photo {
+            p {
+                color: $light-c;
+                text-shadow: 1px 3px 3px $body_txt-c;
+                text-align: center;
+                position: relative;
+                top: 45%;
+                letter-spacing: 10px;
+                font-size: 5rem;
+                transition: 1s ease;
+                -webkit-transition: 1s ease;
+            
+            }
+            $img_height: 350px;
+            &:nth-child(1){
+                background: url(/Cities/images/paris\ \(2\).jpg);
+                @include bg_img(  $img_height);
+            }
+            &:nth-child(2){
+                background: url(/Cities/images/milano.jpg);
+                @include bg_img(  $img_height);
+            } 
+            &:nth-child(3){
+                background: url(/Cities/images/dubai.jpg);
+                @include bg_img(  $img_height);
+            }
+            &:nth-child(4){
+                background: url(/Cities/images/toronto.jpg);
+                @include bg_img(  $img_height);
+            } 
+            &:nth-child(5){
+                background: url(/Cities/images/rome.jpg);
+                @include bg_img(  $img_height);
+            }
+            &:nth-child(6){
+                background: url(/Cities/images/berlin.jpg);
+                @include bg_img(  $img_height);
+            }
+            &:hover {
+                transform: scale(.9);
+                -webkit-transform: scale(.9);
+                transition: 1s ease;
+                box-shadow: 0 0 15px 2px #777;
+                border-radius: 10px;
+            
+            }
+        }
+    }
+}

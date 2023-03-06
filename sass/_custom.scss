@@ -1,0 +1,30 @@
+@import '../Components/01_Component';
+
+@import url("https://fonts.goggleapis.com/css?family=Lato&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-width: 1450px;
+    // min-width: 1024px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    background-color: #769cd3;
+    background-color: $light-c;
+    color: $body_txt-c;
+}
+
+section {
+    margin-top: 2rem;
+}
+p{
+    word-break: break-all;
+}

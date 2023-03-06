@@ -1,0 +1,163 @@
+@media (max-width: $ipad-pro) {
+    // ROOMS 
+
+    .rooms_card-container {
+        justify-content: space-evenly;
+    }
+
+}
+@media (max-width: $ipad) {
+    // NAVIGATION 
+
+    #Nav-with-Logo-Button {
+        max-width: $ipad;
+        font-size: 1rem;
+    }
+    // ROOMS 
+    .rooms_card-container {
+        justify-content: space-evenly;
+        .card {
+            max-width: 350px;
+        }
+    }
+    // HOTELS 
+    #Hotels {
+        .Hotels-container {
+            gap: 10px;
+            margin: 1rem;
+            .photo {
+                p {
+                font-size: 3rem;
+                
+                }
+                $img_height: 250px;
+                &:nth-child(1){
+                    background: url(/Cities/images/paris\ \(2\).jpg);
+                    @include bg_img(  $img_height);
+                }
+                &:nth-child(2){
+                    background: url(/Cities/images/milano.jpg);
+                    @include bg_img(  $img_height);
+                } 
+                &:nth-child(3){
+                    background: url(/Cities/images/dubai.jpg);
+                    @include bg_img(  $img_height);
+                }
+                &:nth-child(4){
+                    background: url(/Cities/images/toronto.jpg);
+                    @include bg_img(  $img_height);
+                } 
+                &:nth-child(5){
+                    background: url(/Cities/images/rome.jpg);
+                    @include bg_img(  $img_height);
+                }
+                &:nth-child(6){
+                    background: url(/Cities/images/berlin.jpg);
+                    @include bg_img(  $img_height);
+                }
+                &:hover {
+                    transform: scale(.9);
+                    -webkit-transform: scale(.9);
+                    transition: 1s ease;
+                    box-shadow: 0 0 15px 2px #777;
+                    border-radius: 10px;
+                
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $phone) {
+    h2 {
+        text-align: center;
+
+    }
+    // NAVIGATION 
+
+    #Nav-with-Logo-Button {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    
+        .nav_logo {
+            width: 100%;
+        }
+        ul {
+            height: 100%;
+    
+        }
+        .nav_links {
+            padding: 0;
+            margin: 1rem 0;
+            justify-content: space-between;
+            width: 100%;
+            .nav_link {
+                a {
+                    padding: 0;
+                    margin: 1rem 0;
+                    color: $light-c;
+                    height: 100%;
+                    &:hover {
+                        @include nav_item-Hover;
+                    }
+                }
+                .account-container{
+                    position: relative;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+    // HEADERV
+    #Header {
+        margin-top: 0;
+        // bg-img from mixin 
+        .card {
+            left: 0;
+            min-width: 300px;
+
+            @keyframes Hotel_Anim {
+                from {
+                    left: -100%;
+                    opacity: 0;
+                }
+                to {
+                    left: 0%;
+                    opacity: 1;
+                }
+            }
+            animation: Hotel_Anim 4s ease;
+            -webkit-animation: Hotel_Anim 4s ease;
+        }
+        #Hotel_name {
+            .date-container, 
+            .people-container {
+                flex-direction: column;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    // ROOMS 
+
+    #Rooms_form {
+        .Rooms-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    #Hotels {
+        .Hotels-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #Footer {
+        p {
+            font-size: .9rem;
+        }
+    }
+}

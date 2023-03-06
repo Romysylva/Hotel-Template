@@ -1,0 +1,83 @@
+#Rooms_form {
+    width: 100%;
+    margin-top: 2rem;
+    .Rooms-container {
+        max-width: 100%;
+        gap: 1rem;
+        justify-content: stretch;
+        .form-group {
+            padding-left: 1rem;
+        }
+        label {
+            i {
+                padding-right: 1rem;
+            }
+        }
+    }
+    #Search_btn {
+        .fa-search {
+            color: $body_txt-c;
+        
+        }
+        margin: 1rem;
+        display: block;
+    }
+}
+.rooms_card-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+        max-width: 450px;
+        min-width: 150px;
+        border: 1px solid lightgray;
+        margin: .5rem;
+        box-shadow: 0 0 15px 1px #777;
+        .room-services {
+            i {
+                color: $success-c;
+                padding-right: 1rem;
+            }
+        }
+        .btn {
+            background-color: $nav_bg-c;
+        }
+    }
+}
+.carousel-container {
+    a {
+
+        margin: .5rem;
+        font-weight: 600;
+        color: $dark-c;
+        padding: 1rem;
+        &:nth-child(2) {
+            background-color: $dark-c;
+            color: $light-c;
+            &:hover {
+                cursor: pointer;
+                background-color: $nav_bg-c;
+            }
+        }
+        &:not(:nth-child(2)) {
+            background-color: $light-c;
+            color: $dark-c;
+            &:hover {
+                cursor: pointer;
+                background-color: $nav_bg-c;
+                color: $light-c;
+            }
+        }
+    }
+}
+.payment-container {
+    margin: 5rem auto;
+    .payment-methods {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: .5rem;
+        }
+    }
+}

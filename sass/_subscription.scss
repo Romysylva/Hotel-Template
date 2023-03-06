@@ -1,0 +1,10 @@
+#Subscription {
+    .card {
+        &:hover {
+            @include opac-1 ;
+        }
+        &-title {
+            margin-top: 1rem;
+        }
+    }
+}

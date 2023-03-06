@@ -1,0 +1,26 @@
+#Contact {
+    .contact_container {
+        width: 100%;
+        height: 100%;
+        $color: $nav_bg-c;
+        .card-header {
+            background-color: $color;
+            color: set_text-c($color);
+        }
+        i {
+            color: $nav_bg-c;
+            padding-right: 1rem;
+
+        }
+        .btn {
+            background-color: $color ;
+            color: set_text-c($color);
+            margin: 0 0 1rem 1rem;
+
+
+        }
+        .form {
+            padding: 1rem;
+        }
+    }
+}
